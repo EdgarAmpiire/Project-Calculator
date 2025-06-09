@@ -1,0 +1,119 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Responsive container */
+.calculator {
+  width: 320px;
+  background: #555;
+  border-radius: 10px;
+  padding: 0px;
+  box-shadow: 0 0 20px #000;
+  display: flex;
+  flex-direction: column;
+  /* remove this: justify-content: space-between; */
+  gap: 8px;           /* keeps a small gap between display and buttons */
+  margin: 40px 0;     /* vertical spacing from viewport edges */
+  /* ensure it only wraps its content: */
+  height: auto;       /* optional—auto is default */
+  max-height: none;   /* optional—remove any previous max-height constraint */
+}
+
+
+/* Display section */
+.display {
+  color: white;
+  font-size: 3.5rem;
+  text-align: right;
+  padding: 16px 10px;
+  background: #555;
+  border-radius: 0px;
+  min-height: 20px;
+  overflow-x: auto;
+   margin-bottom: 4px;
+}
+
+/* Buttons layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+}
+
+/* Button styling */
+.btn {
+  font-size: 1.8rem;
+  border: 0.5px solid #444;
+  border-radius: 0%;
+  padding: 20px;
+  color: white;
+  background: #333;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+
+/* Button colors */
+.gray {
+  background: #555;
+}
+
+.dark {
+  background: #888;
+}
+
+.orange {
+  background: #f09a36;
+}
+
+.orange.equals {
+  border-radius: 0px 0px 10px 0px;
+}
+
+/* Special styling for 0 button */
+.zero {
+  grid-column: span 2;
+  border-radius: 0px 0px 0px 10px;
+  text-align: left;
+  padding-left: 30px;
+  border: 0.5px solid #444;
+}
+
+
+/* Responsive font sizes */
+@media (max-width: 400px) {
+  .display {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+
+/* Creator */
+.creator{
+    font-size: 12px;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: #f09a36;
+}
