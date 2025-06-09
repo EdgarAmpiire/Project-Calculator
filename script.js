@@ -1,39 +1,3 @@
-// Add Subtract Divide and Multiply functions
-function addNumbers(num1, num2) {
-  return num1 + num2;
-}
-
-function subtractNumbers(num1, num2) {
-  return num1 - num2;
-}
-
-function divideNumbers(num1, num2) {
-  if (num2 === 0) {
-    return "Error";
-  } else {
-    return num1 / num2;
-  }
-}
-
-function multiplyNumbers(num1, num2) {
-  return num1 * num2;
-}
-
-// // Main math logic
-// function operate(firstNumber, operator, secondNumber) {
-//   if (operator === "+") {
-//     return addNumbers(firstNumber, secondNumber);
-//   } else if (operator === "-") {
-//     return subtractNumbers(firstNumber, secondNumber);
-//   } else if (operator === "/") {
-//     return divideNumbers(firstNumber, secondNumber);
-//   } else if (operator === "*") {
-//     return multiplyNumbers(firstNumber, secondNumber);
-//   } else {
-//     return "Invalid Operator";
-//   }
-// }
-
 // Logic for number clicked to be displayed
 let displayValue = "0";
 let firstOperand = null;
