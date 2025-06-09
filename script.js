@@ -79,6 +79,12 @@ function onDigitClick(event) {
 // Operator input (+, -, /, *)
 function onOperatorClick(e) {
   const nextOperator = e.target.textContent;
+
+  if(justCalculated) {
+    firstOperand = parseFloat(displayValue);
+    justCalculated = false;
+  }
+
   if (currentOperator && waitingForSecondOperand) {
     currentOperator = nextOperator;
     return;
