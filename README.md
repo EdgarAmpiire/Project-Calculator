@@ -31,4 +31,5 @@ A responsive web-based calculator that mimics the look and functionality of the 
    git clone https://github.com/EdgarAmpiire/Project-Calculator#
 
 2. Access and use it live:
+    https://edgarampiire.github.io/Project-Calculator/
 
